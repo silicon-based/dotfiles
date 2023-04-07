@@ -1,0 +1,81 @@
+
+window:
+  dimensions:
+   columns: 82
+   lines: 28
+  padding:
+    x: 5 
+    y: 2
+
+  opacity: 0.99
+
+  startup_mode: Windowed
+  
+  dynamic_title: true
+
+  class:
+   instance: Alacritty
+   general: Alacritty
+
+  history: 10000
+
+font:
+  normal:
+    family: JetBrainsMono NF
+    style: SemiBold
+
+  bold:
+    family: JetBrainsMono NF
+    style: Bold
+
+  italic:
+    family: JetBrainsMono NF
+    style: Italic
+
+  bold_italic:
+    family: JetBrainsMono NF
+    style: Bold Italic
+  size: 12.5
+draw_bold_text_with_bright_colors: true
+
+colors:
+  primary:
+    background: '#19191a'
+    foreground: '#c9b9bb'
+  cursor:
+    text: '#020221'
+    cursor: '#b4b4b9'
+  normal:
+    black:   '#0d0d0d'
+    red:     '#F75C4A'
+    green:   '#C4DE2F'
+    yellow:  '#FFC620'
+    blue:    '#1BA6FA'
+    magenta: '#8763B8'
+    cyan:    '#06989A'
+    white:   '#cdc3d1'
+  bright:
+    black:   '#6D7070'
+    red:     '#FF4352'
+    green:   '#B8E466'
+    yellow:  '#FFD750'
+    blue:    '#1BA6FA'
+    magenta: '#A578EA'
+    cyan:    '#21E7E1'
+    white:   '#FEFEF8'
+
+cursor:
+  style:
+    shape: Block
+
+    blinking: always
+    blink-interval: 750
+
+live_config_reload: true
+
+
+key_bindings:
+  - { key: Return, mods: Control|Shift, action: SpawnNewInstance }  
+
+shell:
+  program: /usr/bin/zsh
